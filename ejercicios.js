@@ -1,6 +1,6 @@
 
 // RETO 3
-// Sistema de  calendario para verificar siel dia ctual, junto a la hora es coniderada dia y horario laboral estandar
+// Sistema de  calendario para verificar siel dia actual, junto a la hora es coniderada dia y horario laboral estandar
 
 function businessHours(){
     let m="No es horario laborable"
@@ -72,6 +72,8 @@ function business2(dl,hl){
 console.log(business2(6,15))
 
 
+
+
 //Ejercicio 04
 
 // Escribir una funcion que regrese la cantidad de valores true que hay en un array
@@ -117,17 +119,15 @@ function MCD(n1, n2){
 // Usar recursion 
 
 function fibo(n){
-    let vp=0, va=1,vt,c;
-    vt+=va;
-    console.log(vt)
-    va=vt;
-    c++
-    if(n<c){
-        fibo(n)
+    let vi=0, vf=1, vt;
+    for(let j=1;j<=n;j++){
+        vt=vi+vf;
+        console.log(vt)
+        vi=vf;
+        vf=vt;
     }
-
 }
-fibo(5)
+fibo(10)
 
 
 
