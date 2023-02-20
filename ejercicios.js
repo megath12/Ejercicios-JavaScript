@@ -96,7 +96,7 @@ function countTrue(valores){
     }
     return c
 }
-console.log("Numer de True: "+countTrue([true, false, false, true, false]))
+console.log("Numero de True: "+countTrue([true, false, false, true, false]))
 
 
 
@@ -105,10 +105,69 @@ console.log("Numer de True: "+countTrue([true, false, false, true, false]))
 // Escribir una funcion para encontrar el mayor comun divisor de 2 numeros positivos enteros
 // Usar recursion
 
-function MCD(n1, n2){
+/* 
+const multi=(num)=>{
     let k;
-
+    if(num%2==0){
+        k=2;
+    }
+    else if(num%3==0){
+        k=3;
+    }
+    else if(num%5==0){
+        k=5;
+    }
+    else if(num%7==0){
+        k=7;
+    }
+    else{
+        k=0;
+    }
+    return k;
 }
+
+
+/* function agre(nu,ve){
+    if(v1=!0){
+        a1.push(v1)
+        n/=multi(n)
+        console.log(n)
+    }
+}
+ */
+/*
+function MCD(n1, n2){
+    let n,m,v1,v2;
+    let a1=[],a2=[];
+    n=n1,m=n2;
+    v1=multi(n);
+    v2=multi(m)
+    for(let f=0; f<10; f++){
+        if(v1=!0){
+            a1.push(v1)
+            n/=multi(n)
+            console.log(n)
+        }
+        if(v2=!0){
+            a2.push(v2)
+            m/=multi(m)
+            console.log(m)
+        } 
+    }
+    return a1+" "+a2
+    
+}
+
+console.log("QUEEE "+ MCD(12,25))
+ */
+
+
+
+//Ejercicio 05
+// Escribir una funcion para encontrar el mayor comun divisor de 2 numeros positivos enteros
+// Usar recursion
+
+
 
 
 
@@ -132,10 +191,16 @@ fibo(10)
 
 
 
-// Encontrar el numero n de una figura piramidal triangular (tetrahedron)
-// (nivel) -> cantidad de numeritos
+// Encontrar el numero n de una figura piramidal triangular (tetrahedron)  triángulo de Sierpinski 
+// (nivel) -> cantidad de numeritos, Número tetraédrico
+// https://blogsaverroes.juntadeandalucia.es/recursosdematematicas/numeros-piramidales-triangulares-o-tetraedricos/
 
-
+const tetra=(n)=>{
+    let va;
+    va=(1/6)*n*(n+1)*(n+2);
+    return va;
+}
+console.log("Total: "+tetra(4))
 
 
 

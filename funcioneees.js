@@ -104,7 +104,7 @@ console.log(mayyor(5,25))
 const enrCin=(m,V)=>{
     return (1/2)*m*V**2
 }
-console.log("La enegia cnetica es ")
+console.log("La enegia cinetica es ")
 
 console.log(enrCin(60,3))
 console.log(enrCin(45,10))
