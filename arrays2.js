@@ -1,3 +1,6 @@
+
+/*
+
 // const arr =['a','b','c','d'];
 
 // const bucle1 = (arr) => {
@@ -67,41 +70,55 @@ console.log("El número más pequeño es: " + min);
 // nuvDiv(10) -> [5, 5];
 // numDiv(100) -> [50,50];
 
+*/
+
+
+
+
+
+
+
+
+
+
+
 // indexOf nos indica en que indice o posicion del array esta el dato que buscamos
 // indexOf nos indica en que indice o posicion del array esta el dato que buscamos
 const names = ['Zabdiel', 'Griselo', 'Felipe', 'Fer', 'Magali', 'Leslie'];
+console.log(names)
+console.log("Posicion de griselo: "+names.indexOf('Griselo'));
 
-// console.log(names.indexOf('Griselo'));
-
-// Pop elimina el ultimo elemento
-// console.log(names.pop());
-// console.log(names);
-
-// Push agregar un elemento al final del array
-// Return es la nueva longitud
-// console.log(names.push('Sergio'));
-// console.log(names);
-
-// Shift elimina el primer elemento y recorre el resto una posicion hacia atras
-// names.shift();
-// console.log(names);
-
-// //unshift
-// names.unshift('hugo');
-// console.log(names);
-
-//delete 
-
-// delete names[0];
-// console.log(names);
-
-//elimina elementos y si es necesario ingresar nuevos en el arreglo
+// POP elimina el ultimo elemento
+console.log("sin: "+names.pop());
 console.log(names);
+
+// PUSH agregar un elemento al final del array
+// Return es la nueva longitud
+console.log("Agregar: sergio "+names.push('Sergio'));
+console.log(names);
+
+// SHIFT elimina el primer elemento y recorre el resto una posicion hacia atras
+names.shift();
+console.log("Quitar primer elemento ");
+console.log(names)
+
+// //UNSHITF agrega elemento en primera posicion 
+names.unshift('hugo');
+console.log("agregar primer elemento")
+console.log(names);
+
+// DELETE eliminar primer elemento dejando vacio el lugar
+ delete names[0];
+ console.log(names);
+
+
+ //elimina elementos y si es necesario ingresar nuevos en el arreglo
+//console.log(names);
 names.splice(1,0, 'hugo','carlos');
 console.log(names);
 
-//Slice corta el array de (index inicial, index final) y crea uno nuevo con ese rango
-
+//SLICE corta el array de (index inicial, index final) y crea uno nuevo con ese rango
+/*
 const ar = names.slice(2,4);
 console.log(ar);
 
@@ -138,3 +155,4 @@ const carritoFiltrado = carrito.filter(elemento =>{
 console.log(carritoFiltrado);
 
 
+*/
