@@ -9,6 +9,7 @@ const arr2 = [1, -563, 999, 0 , -1, -999];
 // Encontrar el numero mas grande y el mas pequeño
 // -> [10, -9];
 
+
 // Ordenamiento por Burbuja
 
 const burme=(a)=>{
@@ -120,6 +121,7 @@ console.log(findSmallest(numArr));
 */
 
 
+
 // Encontrar la suma de todos los resistores conectados en serie
 // sumResistance([1, 5, 6, 3]) -> "15 ohms"
 // sumResitance([14,3.5,6]) -> "25.5 ohms"
@@ -135,11 +137,13 @@ console.log(suma(arr))
 
 
 
+
+
 // Dado un numero, regresar el mismo numero divido en sus mitades dentro de un array
 // numDiv(4) -> [2, 2];
 // nuvDiv(10) -> [5, 5];
 // numDiv(100) -> [50,50];
-
+ 
 const dvis=(num)=>{
     let k,a=[];
     k=num/2;

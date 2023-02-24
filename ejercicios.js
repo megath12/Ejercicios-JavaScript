@@ -203,6 +203,14 @@ const tetra=(n)=>{
 console.log("Total: "+tetra(4))
 
 
+const tetra2=(n)=>{
+    let va=[];
+    for(let k=1;k<=n;k++){
+        va[k-1]=(1/6)*k*(k+1)*(k+2);
+    }
+    return va;
+}
+console.log("Total: "+tetra2(4))
 
 
 // Crear una funcion que tome el nombre de un pais y su area
@@ -212,16 +220,27 @@ console.log("Total: "+tetra(4))
 // ("USA", 9372610) -> "USA is 6.29%
 
 
+const areaPais=(a)=>{
+    let areaTierra=510.1e6*.292;
+    let divArea=a/areaTierra*100;
+    return divArea;
+}
 
-
+console.log(areaPais(17098242)+" % de area ocupada en la tierra")
+console.log(areaPais(9372610)+" % de area ocupada en la tierra")
 
 
 // Escribir una funcion que retorne 0 si el input es 1 y 1 si el input es 0
 // No se pueden utilizar condicionales, ternarios, negaciones ni operatores bit
 
 
-
-
+const cambio=(num)=>{
+    let j=0**num
+//  let j=Math.abs(-1+num)
+    return j
+}
+console.log("te cambio a "+cambio(0))
+console.log("te cambio a "+cambio(1))
 
 
 
@@ -232,7 +251,29 @@ console.log("Total: "+tetra(4))
 // Si hay 2 personas -> "user1 y user2 estan en linea"
 // Si hay n>2 personas, "user1 y n-1 mas estan en linea"
 
-
+function bzz(num){
+    switch (true) {
+        case num==0:
+            return "No hay nadie";
+            break;
+        case num==1:
+            return "Usuario 1 en linea"
+            break;
+        case num==2:
+            return "Usuario 1 y 2 en linea"
+            break;    
+        case num>2&&num<100:
+            return num+" usuarios en linea"
+        default:
+            return "Numero invalido"
+            break;
+    }
+}
+console.log(bzz(0))
+console.log(bzz(1))
+console.log(bzz(2))
+console.log(bzz(5))
+console.log(bzz(-2))
 
 
 
