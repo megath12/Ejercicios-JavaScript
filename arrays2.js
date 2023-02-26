@@ -109,12 +109,13 @@ console.log(names);
 
 // DELETE eliminar primer elemento dejando vacio el lugar
  delete names[0];
+ console.log("Eliminar primer elemento")
  console.log(names);
 
 
  //elimina elementos y si es necesario ingresar nuevos en el arreglo
 //console.log(names);
-names.splice(1,0, 'hugo','carlos');
+names.splice(0,1, 'hugo','carlos');
 console.log(names);
 
 //SLICE corta el array de (index inicial, index final) y crea uno nuevo con ese rango

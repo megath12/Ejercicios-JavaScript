@@ -54,11 +54,27 @@ console.log(burnum(arr2))
 
 
 // Ordenamiento por Seleccion
-const selenu=()=>{
-    
 
+let selenu=(arr)=>{
+    let arr2=[];
+    for(let i=0; i<arr.length ; i++){
+        let vm,a=arr[0],valor,a1;
+        for (let i = 1; i < arr.length; i++) {
+            let b = arr[i];
+            if (a>b) {
+                a=b;
+            }
+        }
+        arr2.push(a)
+        a1=String(a)
+        let po=arr.indexOf(a1)
+        console.log(po)
+        arr.splice(po,1)
+    } 
+    return arr2
 }
-
+console.log("Metodo por Seleccion")
+console.log(selenu(arr2))
 
 
 
