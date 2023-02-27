@@ -1,5 +1,5 @@
 
-const arr = [1,2,3,4,5];
+//const arr = [1,2,3,4,5];
 const arr2 = [1, -563, 999, 0 , -1, -999];
 
 
@@ -76,6 +76,7 @@ const selenu=(arr)=>{
         arr.splice(po,1,9e6);
     }
     arr=arr3;
+    //console.log(arr)
     return arr2
 }
 console.log("Metodo Seleccion")
@@ -88,38 +89,37 @@ console.log(arr2)
 
 // ------------------------------Ordenamiento por Inserción------------------------------------
 
+
+
+const arr = [100,-2,-31,4,0.5];
+//const arr2 = [1, -563, 999, 0 , -1, -999];
+
+
 let insrme=(arr)=>{
-    console.log(arr)
     let a,b;
     for (let i = 1; i < arr.length; i++) {
         for(let c=i;c>0;c--){
-            a=arr[i-1];
-            b=arr[i]
+            a=arr[c-1]
+            b=arr[c]
             if (b<a) {
-                arr[i-1]=b;
-                arr[i]=a;
+                arr[c]=a;
+                arr[c-1]=b;
             }
-            console.log(arr)
         }
     }
     return arr
 }
 console.log("Metodo Insercion")
-console.log(insrme(arr2))
+console.log(arr)
+let inser=insrme(arr)
+console.log("El num.menor es: "+inser[0]+" el numero mayor es: "+inser[inser.length-1])
+console.log(insrme(arr))
 
 
 
 
 
 // -------------------------------Ordenamiento rapido------------------------------------------
-
-
-
-
-
-
-
-
 
 
 
