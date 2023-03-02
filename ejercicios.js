@@ -170,7 +170,7 @@ console.log("QUEEE "+ MCD(12,25))
 
 let k=1;
 const MCD=(n1,n2)=>{
-    //let k=1;
+    let k2;
     if(n1%2==0 &&n2%2 ==0){
         n1/=2;
         n2/=2;
@@ -197,15 +197,16 @@ const MCD=(n1,n2)=>{
             return MCD(n1,n2)
         }
         else{
-            return k;
-            k=1;
+            k2=k
+            k=1
+            return k2;
         }
     }
 }
 console.log("Maximo Comun Divisor")
 console.log(MCD(12,120))
 console.log(MCD(30,15))
-
+console.log(MCD(50,5))
 
 
 /*

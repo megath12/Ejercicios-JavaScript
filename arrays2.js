@@ -119,9 +119,10 @@ names.splice(0,1, 'hugo','carlos');
 console.log(names);
 
 //SLICE corta el array de (index inicial, index final) y crea uno nuevo con ese rango
-/*
 const ar = names.slice(2,4);
 console.log(ar);
+
+
 
 //sort()
 // reverse() investigar
@@ -137,23 +138,39 @@ names.forEach((elemento, index, arr) => {
     console.log(arr);
 });
 
+
 // map
 // Conserva la integridad del array/objeto original y crea uno nuevo a partir de instrucciones que le demos
-
 const newNames = names.map(elemento => {
     return elemento.toUpperCase();
 });
-
 console.log(newNames);
 
-// filter
+
+// filter  filtra acorde a las condiciones especificadas
 const carrito = [2000, 50, 500, 1500, 999.99];
 
 const carritoFiltrado = carrito.filter(elemento =>{
-    return elemento <= 1500;
+    return elemento <= 1000;
 })
-
+console.log(carrito);
 console.log(carritoFiltrado);
 
+
+//sort ordenar de menor a mayor
+carrito.sort((a,b)=>a-b)
+//a-b menor a mayor
+//b-a mayor a menor
+console.log("Ordenar")
+console.log(carrito)
+
+
+let rCarro=carrito.reverse()
+console.log("Reversa")
+console.log(rCarro)
+
+
+
+/*
 
 */
