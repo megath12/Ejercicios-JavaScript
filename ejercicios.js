@@ -168,9 +168,59 @@ console.log("QUEEE "+ MCD(12,25))
 // Usar recursion
 
 
+let k=1;
+const MCD=(n1,n2)=>{
+    //let k=1;
+    if(n1%2==0 &&n2%2 ==0){
+        n1/=2;
+        n2/=2;
+        k*=2;
+        return MCD(n1,n2)
+    }
+    else{
+        if(n1%3==0 && n2%3 ==0){
+            n1/=3;
+            n2/=3;
+            k*=3;
+            return MCD(n1,n2)
+        }
+        else if(n1%5==0 && n2%5==0){
+            n1/=5;
+            n2/=5;
+            k*=5;
+            return MCD(n1,n2)
+        }
+        else if(n1%7==0 && n2%7 ==0){
+            n1/=7;
+            n2/=7;
+            k*=7;
+            return MCD(n1,n2)
+        }
+        else{
+            return k;
+            k=1;
+        }
+    }
+}
+console.log("Maximo Comun Divisor")
+console.log(MCD(12,120))
+console.log(MCD(30,15))
 
 
 
+/*
+
+Otro codigo mas eficiente
+
+function gcd(a, b) {
+  if (b === 0) { // caso base
+    return a;
+  } else { // caso recursivo
+    return gcd(b, a % b);
+  }
+}
+
+*/
 
 
 
@@ -188,6 +238,7 @@ function fibo(n){
         vf=vt;
     }
 }
+console.log("Serie fibonacci")
 fibo(10)
 
 

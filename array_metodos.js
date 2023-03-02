@@ -2,9 +2,6 @@
 const names = ['Zabdiel', 'Griselo', 'Felipe', 'Fer', 'Magali', 'Leslie'];
 
 // console.log(names.indexOf('Griselo'));
-con
-
-
 
 
 // forEach
@@ -12,19 +9,19 @@ con
 // Comunmente utiliza funciones anonimas para su ejecucion
 
 
-names.forEach((elemento, index, arr) => {
+/* names.forEach((elemento, index, arr) => {
     console.log(elemento);
     console.log(index);
     console.log(arr);
-});
+}); */
 
-/*
+
 names.forEach(function (elemento, index, arr) {
     console.log(elemento);
     console.log(index);
     console.log(arr);
 });
-*/
+
 
 // names.forEach( e => console.log(e));
 
